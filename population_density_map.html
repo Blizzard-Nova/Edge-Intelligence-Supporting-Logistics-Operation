@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_233aae5cb87068a2c6ac960823313acd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_233aae5cb87068a2c6ac960823313acd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_233aae5cb87068a2c6ac960823313acd = L.map(
+                "map_233aae5cb87068a2c6ac960823313acd",
+                {
+                    center: [39.5, -98.35],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d03a37c31a616a550981349941c8e778 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d03a37c31a616a550981349941c8e778.addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            var circle_marker_898ce7518dc52472534d0fc7be20494f = L.circleMarker(
+                [33.6493, -86.7057],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.630168877945918, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_898ce7518dc52472534d0fc7be20494f.bindTooltip(
+                `<div>
+                     Birmingham, AL | Population: 212,157
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4526e542063dee51c67e051b289a3ce = L.circleMarker(
+                [33.3301, -111.8632],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.737797334275946, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_a4526e542063dee51c67e051b289a3ce.bindTooltip(
+                `<div>
+                     Chandler, AZ | Population: 247,477
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5b38d99668672fc4f610ca6e108eeecb = L.circleMarker(
+                [33.5311, -112.1767],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.732976603304425, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_5b38d99668672fc4f610ca6e108eeecb.bindTooltip(
+                `<div>
+                     Glendale, AZ | Population: 245,895
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_38d645adc356498e1cfab7e2fd7bfb74 = L.circleMarker(
+                [33.6238, -112.0044],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.905017582564922, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_38d645adc356498e1cfab7e2fd7bfb74.bindTooltip(
+                `<div>
+                     Phoenix, AZ | Population: 1,615,017
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a1fce3b2dead137ba353d9e91dda8d1 = L.circleMarker(
+                [33.3917, -111.9249],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.539790837563916, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_6a1fce3b2dead137ba353d9e91dda8d1.bindTooltip(
+                `<div>
+                     Tempe, AZ | Population: 182,498
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0dab2a5d33a7647d6fd8f12757a06134 = L.circleMarker(
+                [32.2474, -110.9491],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.600863587330802, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_0dab2a5d33a7647d6fd8f12757a06134.bindTooltip(
+                `<div>
+                     Tucson, AZ | Population: 530,706
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_47dbb6816ace6fdda050ff3fc66c2401 = L.circleMarker(
+                [33.8439, -118.008],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.237072091563416, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_47dbb6816ace6fdda050ff3fc66c2401.bindTooltip(
+                `<div>
+                     Buena Park, CA | Population: 83,156
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c86ffdbfcfa2140a1512f5403fda3d2b = L.circleMarker(
+                [36.8253, -119.6802],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3084597429349785, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_c86ffdbfcfa2140a1512f5403fda3d2b.bindTooltip(
+                `<div>
+                     Clovis, CA | Population: 106,583
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c41db6e92febd8a63253b5ab3fc1b78 = L.circleMarker(
+                [33.6801, -117.9085],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.327471462613434, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_7c41db6e92febd8a63253b5ab3fc1b78.bindTooltip(
+                `<div>
+                     Costa Mesa, CA | Population: 112,822
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1ec3f3fdf82b4dc06f167e5adf1a3a0a = L.circleMarker(
+                [38.4243, -121.437],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.500923313201246, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_1ec3f3fdf82b4dc06f167e5adf1a3a0a.bindTooltip(
+                `<div>
+                     Elk Grove, CA | Population: 169,743
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8345fe4faac473231b5c009c3e38e695 = L.circleMarker(
+                [33.0535, -117.2689],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.176051144847425, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_8345fe4faac473231b5c009c3e38e695.bindTooltip(
+                `<div>
+                     Encinitas, CA | Population: 63,131
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c5b532c9cf17e138a5db68480a6e0c8f = L.circleMarker(
+                [33.1101, -117.07],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.4456768830409, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_c5b532c9cf17e138a5db68480a6e0c8f.bindTooltip(
+                `<div>
+                     Escondido, CA | Population: 151,613
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_92a5e0c4d570b68172448b9610925922 = L.circleMarker(
+                [37.5308, -121.9712],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.694096889988604, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_92a5e0c4d570b68172448b9610925922.bindTooltip(
+                `<div>
+                     Fremont, CA | Population: 233,136
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_50c8e2e867cc2979c07c7ec365d973eb = L.circleMarker(
+                [33.8766, -117.9551],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.412486363608662, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_50c8e2e867cc2979c07c7ec365d973eb.bindTooltip(
+                `<div>
+                     Fullerton, CA | Population: 140,721
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bfa4da2fe7f9afa0360f6d470b20f429 = L.circleMarker(
+                [33.8635, -118.1801],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.41627408080057, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_bfa4da2fe7f9afa0360f6d470b20f429.bindTooltip(
+                `<div>
+                     Long Beach, CA | Population: 470,130
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e06c0f106ccb0222906853bcdba9a80 = L.circleMarker(
+                [34.0245, -118.1975],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.100476588068233, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_4e06c0f106ccb0222906853bcdba9a80.bindTooltip(
+                `<div>
+                     Los Angeles, CA | Population: 3,976,322
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c4d34992e6936770d78afce0b363605c = L.circleMarker(
+                [33.9241, -118.2013],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.2005996964950665, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_c4d34992e6936770d78afce0b363605c.bindTooltip(
+                `<div>
+                     Lynwood, CA | Population: 71,187
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b65dacace2176ecf6dc208207d9a0ab7 = L.circleMarker(
+                [34.0763, -117.6254],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5114941828221085, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_b65dacace2176ecf6dc208207d9a0ab7.bindTooltip(
+                `<div>
+                     Ontario, CA | Population: 173,212
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_969a217b476e681b113ea99eb81e4b48 = L.circleMarker(
+                [36.0686, -119.0315],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.163395964237611, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_969a217b476e681b113ea99eb81e4b48.bindTooltip(
+                `<div>
+                     Porterville, CA | Population: 58,978
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_96df1de5d83af9638331d69327981070 = L.circleMarker(
+                [34.1132, -117.3771],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.298498320971703, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_96df1de5d83af9638331d69327981070.bindTooltip(
+                `<div>
+                     Rialto, CA | Population: 103,314
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_af47be8244856b716161e15a68417187 = L.circleMarker(
+                [34.0658, -118.0853],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.149750431184218, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_af47be8244856b716161e15a68417187.bindTooltip(
+                `<div>
+                     Rosemead, CA | Population: 54,500
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_511946ec3a4931d188abbb6d82fcd3a0 = L.circleMarker(
+                [38.5091, -121.4935],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.492771950781007, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_511946ec3a4931d188abbb6d82fcd3a0.bindTooltip(
+                `<div>
+                     Sacramento, CA | Population: 495,234
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a7875022cce62863d963914d6aca1724 = L.circleMarker(
+                [34.1069, -117.2975],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.642607704637287, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_a7875022cce62863d963914d6aca1724.bindTooltip(
+                `<div>
+                     San Bernardino, CA | Population: 216,239
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5cb43a0c8dea1cd7d1471f4c26215020 = L.circleMarker(
+                [32.9652, -117.1213],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.270012737456042, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_5cb43a0c8dea1cd7d1471f4c26215020.bindTooltip(
+                `<div>
+                     San Diego, CA | Population: 1,406,630
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8e0e8927754cb6c34d1a01b53bac249 = L.circleMarker(
+                [37.3476, -121.887],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.108161723030417, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_b8e0e8927754cb6c34d1a01b53bac249.bindTooltip(
+                `<div>
+                     San Jose, CA | Population: 1,025,350
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3069a6b86be63ef231c760b699388350 = L.circleMarker(
+                [37.7562, -121.9522],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.214166001352973, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_3069a6b86be63ef231c760b699388350.bindTooltip(
+                `<div>
+                     San Ramon, CA | Population: 75,639
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_03797ba776147d5eb26707ec5eaa3d2c = L.circleMarker(
+                [33.7086, -117.8701],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.00211478337183, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_03797ba776147d5eb26707ec5eaa3d2c.bindTooltip(
+                `<div>
+                     Santa Ana, CA | Population: 334,217
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9fd978ca8662e1b9c103b757d8c2d28 = L.circleMarker(
+                [34.0673, -117.9366],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.312311452130934, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_f9fd978ca8662e1b9c103b757d8c2d28.bindTooltip(
+                `<div>
+                     West Covina, CA | Population: 107,847
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_19efb977e1a61fdbdc3969bbf06acc10 = L.circleMarker(
+                [39.6575, -104.7846],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.085892505622155, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_19efb977e1a61fdbdc3969bbf06acc10.bindTooltip(
+                `<div>
+                     Aurora, CO | Population: 361,710
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_877b8fd698e4ac7732e905ed8c7468e4 = L.circleMarker(
+                [38.7902, -104.8199],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.400949519450522, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_877b8fd698e4ac7732e905ed8c7468e4.bindTooltip(
+                `<div>
+                     Colorado Springs, CO | Population: 465,101
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4f63df5810e28fb63083eece042692b2 = L.circleMarker(
+                [39.6956, -105.0341],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.095594912330954, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_4f63df5810e28fb63083eece042692b2.bindTooltip(
+                `<div>
+                     Denver, CO | Population: 693,060
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2678deab56c47bd898a6a45e14bc4188 = L.circleMarker(
+                [39.6463, -105.0092],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.087434408195852, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_2678deab56c47bd898a6a45e14bc4188.bindTooltip(
+                `<div>
+                     Englewood, CO | Population: 34,050
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d2ab6f794e84d23c937ffc7adeb113c = L.circleMarker(
+                [40.385, -104.6806],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3005582540543505, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_6d2ab6f794e84d23c937ffc7adeb113c.bindTooltip(
+                `<div>
+                     Greeley, CO | Population: 103,990
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_32a4fdbff08fe3e6fffea840d9d92095 = L.circleMarker(
+                [41.5569, -72.6652],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.12550660336537, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_32a4fdbff08fe3e6fffea840d9d92095.bindTooltip(
+                `<div>
+                     Middletown, CT | Population: 46,544
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a8315adbd7d80da4f838b0f215c2261f = L.circleMarker(
+                [39.5929, -75.6515],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_a8315adbd7d80da4f838b0f215c2261f.bindTooltip(
+                `<div>
+                     New Castle, DE | Population: 5,357
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b7b83b51d821d7ad4cfed318585b01e = L.circleMarker(
+                [30.2231, -81.7556],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.667131878378626, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_1b7b83b51d821d7ad4cfed318585b01e.bindTooltip(
+                `<div>
+                     Jacksonville, FL | Population: 880,619
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2681277069f9cb875fa377156b9b687a = L.circleMarker(
+                [28.5469, -81.2571],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.828288122474602, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_2681277069f9cb875fa377156b9b687a.bindTooltip(
+                `<div>
+                     Orlando, FL | Population: 277,173
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ed5625f5709cac94f71a45b074d163f3 = L.circleMarker(
+                [26.216, -80.2205],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.317022482524088, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_ed5625f5709cac94f71a45b074d163f3.bindTooltip(
+                `<div>
+                     Pompano Beach, FL | Population: 109,393
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e21179e543daf44a70801c6219a083a4 = L.circleMarker(
+                [33.6989, -84.7454],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.085002712042076, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_e21179e543daf44a70801c6219a083a4.bindTooltip(
+                `<div>
+                     Douglasville, GA | Population: 33,252
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b700ab1f7a6530f98708201dc52eec07 = L.circleMarker(
+                [33.9845, -84.1529],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.073054490715065, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_b700ab1f7a6530f98708201dc52eec07.bindTooltip(
+                `<div>
+                     Duluth, GA | Population: 29,331
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_04def95addd25be8ca840dce3a573f54 = L.circleMarker(
+                [34.0378, -84.5038],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.169377692996837, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_04def95addd25be8ca840dce3a573f54.bindTooltip(
+                `<div>
+                     Marietta, GA | Population: 60,941
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_74c263f0bcd5933275917e4e0a2a369a = L.circleMarker(
+                [33.906, -84.184],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.03482993363115, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_74c263f0bcd5933275917e4e0a2a369a.bindTooltip(
+                `<div>
+                     Norcross, GA | Population: 16,787
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9085fff9f3f37c0f8b4b3c8fb931221 = L.circleMarker(
+                [33.9135, -84.6859],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.029250440325932, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_d9085fff9f3f37c0f8b4b3c8fb931221.bindTooltip(
+                `<div>
+                     Powder Springs, GA | Population: 14,956
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42c4983c002182c01a5776873499e497 = L.circleMarker(
+                [34.0408, -84.3859],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.271938592054021, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_42c4983c002182c01a5776873499e497.bindTooltip(
+                `<div>
+                     Roswell, GA | Population: 94,598
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_895c3283fb81da5d600be5d6681dfa97 = L.circleMarker(
+                [33.7942, -84.2018],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.002958868377589, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_895c3283fb81da5d600be5d6681dfa97.bindTooltip(
+                `<div>
+                     Stone Mountain, GA | Population: 6,328
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_02603512e47959157cbaa00614c4bc33 = L.circleMarker(
+                [41.762, -87.5703],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.226327529360141, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_02603512e47959157cbaa00614c4bc33.bindTooltip(
+                `<div>
+                     Chicago, IL | Population: 2,704,958
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e1fdbf1a74fdfcb5db7fb09ce96df2e0 = L.circleMarker(
+                [42.2308, -88.3324],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.106598489788705, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_e1fdbf1a74fdfcb5db7fb09ce96df2e0.bindTooltip(
+                `<div>
+                     Crystal Lake, IL | Population: 40,339
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9f6c9e50406a466b12bbe4bb91b70d1 = L.circleMarker(
+                [38.8733, -94.7752],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.396494457073555, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_c9f6c9e50406a466b12bbe4bb91b70d1.bindTooltip(
+                `<div>
+                     Olathe, KS | Population: 135,473
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fca3693c20a6b63b34753b055329b7d4 = L.circleMarker(
+                [38.2281, -84.8697],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.068648184150704, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_fca3693c20a6b63b34753b055329b7d4.bindTooltip(
+                `<div>
+                     Frankfort, KY | Population: 27,885
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_122f8b7da41f0214ea924f701f4c66af = L.circleMarker(
+                [37.7546, -84.2955],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.089268845645192, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_122f8b7da41f0214ea924f701f4c66af.bindTooltip(
+                `<div>
+                     Richmond, KY | Population: 34,652
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f2fcce84f61b7425515e3ff84b8b6f5 = L.circleMarker(
+                [30.0252, -90.2522],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.18811211399109, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_0f2fcce84f61b7425515e3ff84b8b6f5.bindTooltip(
+                `<div>
+                     Kenner, LA | Population: 67,089
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_55d3972abc7837ab49daf71cec89de97 = L.circleMarker(
+                [30.0056, -90.0644],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.176654498028437, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_55d3972abc7837ab49daf71cec89de97.bindTooltip(
+                `<div>
+                     New Orleans, LA | Population: 391,495
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_93680c47392f8cb8ea5d800239a9edf1 = L.circleMarker(
+                [41.6347, -70.9372],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.273261093470987, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_93680c47392f8cb8ea5d800239a9edf1.bindTooltip(
+                `<div>
+                     New Bedford, MA | Population: 95,032
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_10d8413ab9b66810d243950bba9ead99 = L.circleMarker(
+                [39.3446, -76.6794],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.856703619509639, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_10d8413ab9b66810d243950bba9ead99.bindTooltip(
+                `<div>
+                     Baltimore, MD | Population: 614,664
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_79571da686f0f3529aa995c09eb4953a = L.circleMarker(
+                [39.1125, -77.2515],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.190205566694904, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_79571da686f0f3529aa995c09eb4953a.bindTooltip(
+                `<div>
+                     Gaithersburg, MD | Population: 67,776
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f09f09a5cce99d0cac4af785f9932d5 = L.circleMarker(
+                [42.4081, -83.0583],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.04995947173077, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_2f09f09a5cce99d0cac4af785f9932d5.bindTooltip(
+                `<div>
+                     Hamtramck, MI | Population: 21,752
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a164c8f80682c450d1d2a57fe0fcf749 = L.circleMarker(
+                [42.2325, -83.6336],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.047722798827423, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_a164c8f80682c450d1d2a57fe0fcf749.bindTooltip(
+                `<div>
+                     Ypsilanti, MI | Population: 21,018
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7154b51b7185b4b5e18c2fa00b0a1b5 = L.circleMarker(
+                [38.8069, -90.3401],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.14144975408787, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_d7154b51b7185b4b5e18c2fa00b0a1b5.bindTooltip(
+                `<div>
+                     Florissant, MO | Population: 51,776
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c482bf0e6ec73de23bfbb47b9080d5e = L.circleMarker(
+                [35.22, -80.7881],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.549605992089369, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_6c482bf0e6ec73de23bfbb47b9080d5e.bindTooltip(
+                `<div>
+                     Charlotte, NC | Population: 842,051
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dcb733b60286136be837594d78bf9f95 = L.circleMarker(
+                [39.3762, -75.1617],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.059847759975135, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_dcb733b60286136be837594d78bf9f95.bindTooltip(
+                `<div>
+                     Bridgeton, NJ | Population: 24,997
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52dc37df0bbfef6c8dd582d8fe6e89ba = L.circleMarker(
+                [40.7664, -74.1695],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.842277993454532, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_52dc37df0bbfef6c8dd582d8fe6e89ba.bindTooltip(
+                `<div>
+                     Newark, NJ | Population: 281,764
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_33fbc5054ea09f8c52bfac08f6d2efb2 = L.circleMarker(
+                [40.5176, -74.2754],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.1436529073700505, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_33fbc5054ea09f8c52bfac08f6d2efb2.bindTooltip(
+                `<div>
+                     Perth Amboy, NJ | Population: 52,499
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ade78ca80de6b7bf36cd295905e2dbb1 = L.circleMarker(
+                [35.0448, -106.6893],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.687926232455526, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_ade78ca80de6b7bf36cd295905e2dbb1.bindTooltip(
+                `<div>
+                     Albuquerque, NM | Population: 559,277
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59082d75779ba814218ce80093dfcb03 = L.circleMarker(
+                [35.2493, -106.6818],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.276296142805775, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_59082d75779ba814218ce80093dfcb03.bindTooltip(
+                `<div>
+                     Rio Rancho, NM | Population: 96,028
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_96dc7d04b59ef6401633bb87874c16da = L.circleMarker(
+                [33.6397, -104.3748],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.130504074157591, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_96dc7d04b59ef6401633bb87874c16da.bindTooltip(
+                `<div>
+                     Roswell, NM | Population: 48,184
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b6535fed59fba2d1378b15df114fc01d = L.circleMarker(
+                [36.0383, -115.1462],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.912309623787961, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_b6535fed59fba2d1378b15df114fc01d.bindTooltip(
+                `<div>
+                     Las Vegas, NV | Population: 632,912
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_733c940399553cc05358a6cc16b9a58d = L.circleMarker(
+                [36.2115, -115.1241],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.711057818299276, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_733c940399553cc05358a6cc16b9a58d.bindTooltip(
+                `<div>
+                     North Las Vegas, NV | Population: 238,702
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f312ce7c5ed9eeeb67607da953d0edf = L.circleMarker(
+                [42.9685, -78.7492],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.766517555139777, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_2f312ce7c5ed9eeeb67607da953d0edf.bindTooltip(
+                `<div>
+                     Buffalo, NY | Population: 256,902
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e1d58a14f76f69468bc608c32a0105f = L.circleMarker(
+                [42.4406, -76.4966],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.077396805275379, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_4e1d58a14f76f69468bc608c32a0105f.bindTooltip(
+                `<div>
+                     Ithaca, NY | Population: 30,756
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d731c9a461c9fe0b364f5eceea74aa3f = L.circleMarker(
+                [40.7685, -73.9588],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.0, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_d731c9a461c9fe0b364f5eceea74aa3f.bindTooltip(
+                `<div>
+                     New York, NY | Population: 8,537,673
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2caf89512417f3a5cf59a4feb51f896a = L.circleMarker(
+                [41.4735, -81.7398],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.159327901123212, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_2caf89512417f3a5cf59a4feb51f896a.bindTooltip(
+                `<div>
+                     Cleveland, OH | Population: 385,809
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_da7810db16245b238a99ac2613b77b5f = L.circleMarker(
+                [40.0347, -82.8726],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.604575123565512, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_da7810db16245b238a99ac2613b77b5f.bindTooltip(
+                `<div>
+                     Columbus, OH | Population: 860,090
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9cfe2cdfd22d0b200f1f86ae24a1f87d = L.circleMarker(
+                [41.4847, -81.8018],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.136888038370825, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_9cfe2cdfd22d0b200f1f86ae24a1f87d.bindTooltip(
+                `<div>
+                     Lakewood, OH | Population: 50,279
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_83abbc2268c6a08fd07f3f1945cb3201 = L.circleMarker(
+                [41.1404, -81.8584],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.06369946917109, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_83abbc2268c6a08fd07f3f1945cb3201.bindTooltip(
+                `<div>
+                     Medina, OH | Population: 26,261
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0fabc6e8c1feccc95e3abc0bae06cd1d = L.circleMarker(
+                [39.5151, -84.3983],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.132420787040705, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_0fabc6e8c1feccc95e3abc0bae06cd1d.bindTooltip(
+                `<div>
+                     Middletown, OH | Population: 48,813
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4c0d4844bdd8a784b9fb65ef9cdf7db4 = L.circleMarker(
+                [39.9551, -82.8035],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.097791971136559, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_4c0d4844bdd8a784b9fb65ef9cdf7db4.bindTooltip(
+                `<div>
+                     Reynoldsburg, OH | Population: 37,449
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5b4bbee4d5cebf77d809b7f67dc1735 = L.circleMarker(
+                [41.3132, -81.8285],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.119677236520541, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_e5b4bbee4d5cebf77d809b7f67dc1735.bindTooltip(
+                `<div>
+                     Strongsville, OH | Population: 44,631
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a188341afe219603e1bdeb26e7af8c38 = L.circleMarker(
+                [39.9274, -82.0041],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.06127386749389, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_a188341afe219603e1bdeb26e7af8c38.bindTooltip(
+                `<div>
+                     Zanesville, OH | Population: 25,465
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_972087e8b37c86828c4fe2f17b6ad64d = L.circleMarker(
+                [44.0928, -121.2936],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.2613463917651435, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_972087e8b37c86828c4fe2f17b6ad64d.bindTooltip(
+                `<div>
+                     Bend, OR | Population: 91,122
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e83bcfbf8098d47347c1c933e3dd5645 = L.circleMarker(
+                [45.484, -122.5973],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.93349097712743, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_e83bcfbf8098d47347c1c933e3dd5645.bindTooltip(
+                `<div>
+                     Portland, OR | Population: 639,863
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e5f76d6f7339940240e107c94f4355e = L.circleMarker(
+                [44.949, -123.004],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.493841531420074, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_0e5f76d6f7339940240e107c94f4355e.bindTooltip(
+                `<div>
+                     Salem, OR | Population: 167,419
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_795658750024d9ba3f3f0ff2caaee655 = L.circleMarker(
+                [40.3074, -79.5424],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.027647592986477, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_795658750024d9ba3f3f0ff2caaee655.bindTooltip(
+                `<div>
+                     Greensburg, PA | Population: 14,430
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_99dadf084df17d910ad412b5a80a0263 = L.circleMarker(
+                [40.0766, -76.3107],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.164127301426717, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_99dadf084df17d910ad412b5a80a0263.bindTooltip(
+                `<div>
+                     Lancaster, PA | Population: 59,218
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1743ebc9fe925a7850299860d487bd21 = L.circleMarker(
+                [39.9612, -75.2303],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.761355533480007, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_1743ebc9fe925a7850299860d487bd21.bindTooltip(
+                `<div>
+                     Philadelphia, PA | Population: 1,567,872
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_20c5e6a011f95b3afcf52c83fc3514b7 = L.circleMarker(
+                [39.959, -76.6592],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.117324768562252, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_20c5e6a011f95b3afcf52c83fc3514b7.bindTooltip(
+                `<div>
+                     York, PA | Population: 43,859
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76d5b769ff8bf427c67734ddbb388a21 = L.circleMarker(
+                [41.8729, -71.3907],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.201331033684172, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_76d5b769ff8bf427c67734ddbb388a21.bindTooltip(
+                `<div>
+                     Pawtucket, RI | Population: 71,427
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad93c544be6526adb56e6e0d046bbc3d = L.circleMarker(
+                [34.0853, -80.9167],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3929474717063925, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_ad93c544be6526adb56e6e0d046bbc3d.bindTooltip(
+                `<div>
+                     Columbia, SC | Population: 134,309
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_476ad0f75c35c75ee3ef69a6360f76c7 = L.circleMarker(
+                [34.749, -80.7616],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.011509419013548, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_476ad0f75c35c75ee3ef69a6360f76c7.bindTooltip(
+                `<div>
+                     Lancaster, SC | Population: 9,134
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_35e8f9902772e05434c7a0f132ff4238 = L.circleMarker(
+                [36.3054, -86.6072],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.157520888818464, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_35e8f9902772e05434c7a0f132ff4238.bindTooltip(
+                `<div>
+                     Hendersonville, TN | Population: 57,050
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_19df4e675180b5f8393b49b49dc62447 = L.circleMarker(
+                [35.251, -90.0296],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.972660178080606, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_19df4e675180b5f8393b49b49dc62447.bindTooltip(
+                `<div>
+                     Memphis, TN | Population: 652,717
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_86038febc4e43c91d621baf4e2d7589a = L.circleMarker(
+                [32.9657, -96.8825],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.390028217426546, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_86038febc4e43c91d621baf4e2d7589a.bindTooltip(
+                `<div>
+                     Carrollton, TX | Population: 133,351
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2d47a23968b00445635052996760a783 = L.circleMarker(
+                [32.7244, -96.6755],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.999719654077509, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_2d47a23968b00445635052996760a783.bindTooltip(
+                `<div>
+                     Dallas, TX | Population: 1,317,929
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_004d6c8a3af6feb517a468b52e99f59a = L.circleMarker(
+                [26.2159, -98.3253],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.238312317546607, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_004d6c8a3af6feb517a468b52e99f59a.bindTooltip(
+                `<div>
+                     Mission, TX | Population: 83,563
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9224161928070f05161c931b5a9f178c = L.circleMarker(
+                [26.1771, -98.187],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.219288408915, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_9224161928070f05161c931b5a9f178c.bindTooltip(
+                `<div>
+                     Pharr, TX | Population: 77,320
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a65e7518744edf851fd0da16d677bf53 = L.circleMarker(
+                [40.8775, -111.8727],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.117992113747311, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_a65e7518744edf851fd0da16d677bf53.bindTooltip(
+                `<div>
+                     Bountiful, UT | Population: 44,078
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b5ec814a64914b840432d59afa01cdaf = L.circleMarker(
+                [36.7352, -76.2384],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.708735822723865, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_b5ec814a64914b840432d59afa01cdaf.bindTooltip(
+                `<div>
+                     Chesapeake, VA | Population: 237,940
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_643e6cecd71ac06c0ebdda48f4592f9c = L.circleMarker(
+                [37.0462, -76.4096],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.396302481061414, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_643e6cecd71ac06c0ebdda48f4592f9c.bindTooltip(
+                `<div>
+                     Hampton, VA | Population: 135,410
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9e3c3675df914074505a36ed4830c3d = L.circleMarker(
+                [36.9442, -76.252],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.730599757439832, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_f9e3c3675df914074505a36ed4830c3d.bindTooltip(
+                `<div>
+                     Norfolk, VA | Population: 245,115
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_81a6df0eb32ea14cb70badcda77e0770 = L.circleMarker(
+                [36.8881, -76.1446],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.362862088089564, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_81a6df0eb32ea14cb70badcda77e0770.bindTooltip(
+                `<div>
+                     Virginia Beach, VA | Population: 452,602
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf3578c260b620f56b63e3ca9974493a = L.circleMarker(
+                [47.8948, -122.1987],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3159559491233095, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_bf3578c260b620f56b63e3ca9974493a.bindTooltip(
+                `<div>
+                     Everett, WA | Population: 109,043
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b0de74c322f0bb34089b103ce44e573 = L.circleMarker(
+                [47.6718, -122.1232],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.1740003534796415, "stroke": true, "weight": 3}
+            ).addTo(map_233aae5cb87068a2c6ac960823313acd);
+        
+    
+            circle_marker_2b0de74c322f0bb34089b103ce44e573.bindTooltip(
+                `<div>
+                     Redmond, WA | Population: 62,458
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
