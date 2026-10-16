@@ -1,0 +1,1 @@
+Supply chain delays cause major financial losses. This project uses machine learning to identify high risk routes, giving operators a targeted, data driven framework to strategically invest in IoT infrastructure, reduce delays and protect profits.
