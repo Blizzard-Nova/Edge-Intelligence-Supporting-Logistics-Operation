@@ -25,13 +25,17 @@ The notebooks expect these CSV files, which are **not included** in this reposit
 
 | File | Used in | Notes |
 | ---- | ------- | ----- |
-| `USA_Supply_data.csv` | Both notebooks | US-focused supply chain orders (24,840 rows, 49 columns). Appears to be derived from `DataCoSupplyChainDataset.csv` |
-| `DataCoSupplyChainDataset.csv` | `Supply_chain_work_in_progress.ipynb` | The DataCo Smart Supply Chain dataset, loaded for comparison |
+| `USA_Supply_data.csv` | Both notebooks | Subset of `DataCOSupplyChainDataset.csv` containing the orders whose `Order Country` is `Estados Unidos` (the dataset's Spanish label for the United States). 24,840 rows, 49 columns. Customers are in the US mainland (15,442 orders) or Puerto Rico (9,398 orders) |
+| `DataCOSupplyChainDataset.csv` | `Supply_chain_work_in_progress.ipynb` | The DataCo Smart Supply Chain dataset, loaded for comparison |
 | `sub-est2016_all.csv` | `IoT Simulation.ipynb` | US Census city/town population estimates, used for the population-density map |
 
 Place the files in the repository root. Both supply chain files are read with `encoding="latin-1"`.
 
 Key columns used include `Days for shipping (real)`, `Days for shipment (scheduled)`, `Late_delivery_risk`, `Order Profit Per Order`, `Shipping Mode`, `Department Name`, and the customer and order city/state/region fields.
+
+   To regenerate `USA_Supply_data.csv` from the original dataset:
+   `df[df["Order Country"] == "Estados Unidos"].to_csv("USA_Supply_data.csv", index=False)`
+
 
 ## Methodology
 
@@ -72,7 +76,7 @@ Other assumptions: IoT cost of **$2.50 per shipment** and a **$15 penalty per la
 | Model | Test accuracy | Weighted F1 |
 | ----- | ------------- | ----------- |
 | Logistic Regression (baseline) | 0.683 | 0.681 |
-| Random Forest (tuned) | 0.810 | about 0.81 |
+| Random Forest (tuned) | 0.810 | about 0.810 |
 | XGBoost (tuned) | 0.819 | 0.819 |
 
 Five-fold cross-validated weighted F1 is 0.801 for Random Forest and 0.804 for XGBoost, with standard deviations under 0.01. The large gap over logistic regression suggests the relationship between location, shipping mode, and delays is strongly non-linear.
@@ -136,4 +140,4 @@ Issues and pull requests are welcome.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the apache2.0 so see the LICENSE file for details.
