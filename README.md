@@ -136,4 +136,4 @@ Issues and pull requests are welcome.
 
 ## License
 
-No license has been specified for this project yet. Consider adding one, such as [MIT](https://choosealicense.com/licenses/mit/), if you'd like others to be able to reuse the work.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
